@@ -1,195 +1,111 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" data-color-mode="dark" data-dark-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invest in Space Economy | SPCX Legacy</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .mono { font-family: 'JetBrains Mono', monospace; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demo Repository | Production Landing Page</title>
+  <link rel="stylesheet" href="https://unpkg.com/@primer/css@17.0.1/dist/primer.css">
+  <style>
+    /* Custom subtle refinements to elevate the premium feel */
+    body {
+      background-color: #0d1117;
+    }
+    .hero-gradient {
+      background: radial-gradient(circle at top right, rgba(56, 139, 253, 0.15), transparent 60%);
+    }
+  </style>
 </head>
-<body class="bg-neutral-950 text-neutral-100 antialiased overflow-x-hidden">
+<body class="color-bg-default color-text-primary lh-default">
 
-    <!-- Navigation -->
-    <nav class="fixed top-0 left-0 w-full z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800/60 transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <span class="mono tracking-widest text-lg font-bold bg-gradient-to-r from-white to-neutral-400 bg-clip-text text-transparent">SPCX // ORBIT</span>
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-neutral-400">
-                <a href="#history" class="hover:text-white transition-colors">The Debut</a>
-                <a href="#metrics" class="hover:text-white transition-colors">Performance</a>
-                <a href="#why-invest" class="hover:text-white transition-colors">Growth Pillars</a>
-                <a href="#brokerage" class="hover:text-white transition-colors">Access Brokerage</a>
-            </div>
-            <a href="#brokerage" class="mono text-xs bg-white text-black px-5 py-2.5 font-bold uppercase tracking-wider hover:bg-neutral-200 transition-all rounded-sm">
-                Trade SPCX
-            </a>
-        </div>
-    </nav>
+  <header class="Header color-bg-subtle border-bottom color-border-muted px-3 px-md-4 px-lg-5">
+    <div class="Header-item">
+      <a href="#" class="Header-link f4 d-flex flex-items-center Subhead-heading">
+        <svg class="octicon octicon-terminal mr-2" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true" fill="currentColor"><path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25V2.75Zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25H1.75ZM5.28 5.22a.75.75 0 0 1 0 1.06L3.81 7.75l1.47 1.47a.75.75 0 0 1-1.06 1.06l-2-2a.75.75 0 0 1 0-1.06l2-2a.75.75 0 0 1 1.06 0Zm3.47 3.53h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5Z"></path></svg>
+        <span>demo-repo</span>
+      </a>
+    </div>
+    <div class="Header-item Header-item--full">
+      <nav class="d-flex f5">
+        <a href="#features" class="Header-link mr-3">Features</a>
+        <a href="#docs" class="Header-link">Docs</a>
+      </nav>
+    </div>
+    <div class="Header-item">
+      <span class="Label Label--secondary mr-2">v0.2.0</span>
+    </div>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center justify-center pt-20 px-6 overflow-hidden">
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(40,40,40,0.15),transparent_70%)]"></div>
-        <div class="relative max-w-5xl mx-auto text-center z-10">
-            <span class="mono text-xs text-neutral-500 uppercase tracking-[0.3em] block mb-4">HISTORIC NASDAQ LISTING AVAILABLE NOW</span>
-            <h1 class="text-5xl md:text-8xl font-extrabold tracking-tight mb-8 leading-[1.1]">
-                The Century's <br/>
-                <span class="bg-gradient-to-r from-neutral-100 via-neutral-300 to-neutral-500 bg-clip-text text-transparent">Greatest Asset Float.</span>
-            </h1>
-            <p class="text-lg md:text-xl text-neutral-400 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
-                On June 12, 2026, SpaceX redefined global capital markets. Secure your direct exposure to the infrastructure anchoring humanity's multiplanetary expansion.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#brokerage" class="w-full sm:w-auto bg-neutral-100 text-neutral-900 px-8 py-4 font-semibold text-sm hover:bg-white transition-all text-center rounded-sm shadow-xl shadow-white/5">
-                    Connect Your Portfolio
-                </a>
-                <a href="#why-invest" class="w-full sm:w-auto border border-neutral-700 hover:border-neutral-500 px-8 py-4 font-semibold text-sm transition-all text-center rounded-sm text-neutral-300">
-                    Explore Growth Metrics &darr;
-                </a>
-            </div>
-        </div>
-    </section>
+  <section class="hero-gradient border-bottom color-border-subtle py-8 px-3">
+    <div class="container-xl col-md-10 col-lg-8 mx-auto text-center my-6">
+      <h1 class="color-text-primary font-mktg h0-mktg mb-3 text-bold tracking-tight">
+        Minimalist Architecture.<br>Maximum Performance.
+      </h1>
+      <p class="f3 color-text-secondary col-md-10 mx-auto mb-5 font-light">
+        A stripped-back, high-performance static boilerplate optimized for clean layouts, rapid prototyping, and ultra-lightweight deployment configurations.
+      </p>
+      <div class="d-flex flex-justify-center flex-items-center gap-2">
+        <button class="btn btn-primary btn-large px-4 py-3" type="button">
+          Get Started
+        </button>
+        <button class="btn btn-invisible color-text-link px-3" type="button">
+          View Repository →
+        </button>
+      </div>
+    </div>
+  </section>
 
-    <!-- Historical Launch Visual Frame -->
-    <section id="history" class="max-w-7xl mx-auto px-6 py-12 border-t border-neutral-900">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-5 space-y-6">
-                <span class="mono text-xs text-amber-500 uppercase tracking-widest block">JUNE 12, 2026 DEBUT</span>
-                <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white">The $75 Billion Market Catalyst</h2>
-                <p class="text-neutral-400 font-light leading-relaxed">
-                    SpaceX concluded its historic Initial Public Offering at an initial pricing floor of $135 per share, immediately closing its first live session at over $161. This legendary launch officially confirmed founder Elon Musk as the world’s first trillionaire and positioned public retail investors alongside top institutional firms.
-                </p>
-                <div class="p-4 bg-neutral-900/50 border border-neutral-800 rounded-sm">
-                    <p class="text-xs text-neutral-500 italic">
-                        "We are taking the fiction out of science fiction." — Launch Day Statement
-                    </p>
-                </div>
+  <section id="features" class="py-8 px-3 color-bg-subtle">
+    <div class="container-xl mx-auto py-4">
+      <div class="Subhead mb-6">
+        <div class="Subhead-heading text-center f2">Core Architecture Stack</div>
+      </div>
+      
+      <div class="clearfix gutter-lg-md">
+        <div class="col-sm-12 col-md-4 float-left mb-4">
+          <div class="Box p-4 height-full color-bg-default color-border-muted shadow-sm">
+            <div class="color-fg-accent mb-3">
+              <svg class="octicon octicon-zap" viewBox="0 0 16 16" version="1.1" width="24" height="24" fill="currentColor"><path d="M8.3 1.132a.75.75 0 0 1 .425.666v5.452h4.525a.75.75 0 0 1 .58 1.223l-7.25 8.75A.75.75 0 0 1 5.3 16.7v-5.452H.775a.75.75 0 0 1-.58-1.223l7.25-8.75A.75.75 0 0 1 8.3 1.132ZM7.475 9.748v4.302L12.725 8.5H7.475V4.198L2.275 9.748h5.2Z"></path></svg>
             </div>
-            <div class="lg:col-span-7 bg-neutral-900 rounded-sm overflow-hidden p-2 border border-neutral-800/50">
-                <div class="aspect-video w-full bg-neutral-950 flex items-center justify-center text-neutral-600 relative">
-                    <!-- Placeholder graphic inside raw layout code base -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 to-transparent z-10"></div>
-                    <span class="mono text-xs z-20 text-neutral-400">VISUAL SECURED // NASDAQ CAPTURE</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Core Metrics Dashboard Section -->
-    <section id="metrics" class="py-24 bg-neutral-900/30 border-y border-neutral-900 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center md:text-left mb-16">
-                <span class="mono text-xs text-neutral-500 uppercase tracking-widest block mb-2">BY THE NUMBERS</span>
-                <h2 class="text-3xl md:text-5xl font-bold tracking-tight">Market Execution Metrics</h2>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="p-8 border border-neutral-800 bg-neutral-950/40 rounded-sm">
-                    <span class="mono text-xs text-neutral-500 block mb-2">LIVE TICKER</span>
-                    <div class="text-3xl font-bold tracking-tight text-white mb-2">NASDAQ: SPCX</div>
-                    <p class="text-xs text-neutral-400 font-light">Direct equity tracking across mainstream liquid secondary pipelines.</p>
-                </div>
-                <div class="p-8 border border-neutral-800 bg-neutral-950/40 rounded-sm">
-                    <span class="mono text-xs text-neutral-500 block mb-2">IPO FLOATING VALUATION</span>
-                    <div class="text-3xl font-bold tracking-tight text-white mb-2">$1.77T &rarr; $2.1T</div>
-                    <p class="text-xs text-neutral-400 font-light">Initial base valuation popped nearly 20% during day-one institutional trading blocks.</p>
-                </div>
-                <div class="p-8 border border-neutral-800 bg-neutral-950/40 rounded-sm">
-                    <span class="mono text-xs text-neutral-500 block mb-2">REVENUE ACCELERATION</span>
-                    <div class="text-3xl font-bold tracking-tight text-white mb-2">30% Retail Pool</div>
-                    <p class="text-xs text-neutral-400 font-light">An unprecedented public allocation strategy to minimize traditional gatekeeping.</p>
-                </div>
-                <div class="p-8 border border-neutral-800 bg-neutral-950/40 rounded-sm">
-                    <span class="mono text-xs text-neutral-500 block mb-2">LIQUIDITY CAP</span>
-                    <div class="text-3xl font-bold tracking-tight text-white mb-2">$75 Billion</div>
-                    <p class="text-xs text-neutral-400 font-light">The single largest public allocation raise in modern financial history.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Invest Deep Dive Section -->
-    <section id="why-invest" class="max-w-7xl mx-auto px-6 py-24">
-        <div class="max-w-3xl mb-20">
-            <span class="mono text-xs text-neutral-500 uppercase tracking-widest block mb-2">INVESTMENT DISCLOSURE</span>
-            <h2 class="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6">Why SPCX Anchors the Future Secular Portfolio</h2>
-            <p class="text-lg text-neutral-400 font-light">
-                SpaceX is no longer a spec-heavy aerospace project; it is a multi-vertical critical utility infrastructure holding an effective commercial monopoly.
-            </p>
+            <h3 class="h4 mb-2">Zero Bloat</h3>
+            <p class="color-text-secondary f5 mb-0">Pure utility-first layout classes mean fast parsing times, optimal rendering performance, and clean element scaling.</p>
+          </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-            <div class="space-y-4">
-                <div class="w-12 h-12 rounded-sm bg-neutral-900 border border-neutral-800 flex items-center justify-center text-white font-bold mono text-sm">01</div>
-                <h3 class="text-xl font-bold text-white">Commercial Launch Dominance</h3>
-                <p class="text-sm text-neutral-400 font-light leading-relaxed">
-                    By leveraging fully reusable launch vehicles (Falcon 9, Falcon Heavy, and the fully integrated Starship deep orbital infrastructure), SpaceX operates at a cost-per-kilogram advantage that traditional competitors cannot physically match.
-                </p>
+        <div class="col-sm-12 col-md-4 float-left mb-4">
+          <div class="Box p-4 height-full color-bg-default color-border-muted shadow-sm">
+            <div class="color-fg-success mb-3">
+              <svg class="octicon octicon-shield" viewBox="0 0 16 16" version="1.1" width="24" height="24" fill="currentColor"><path d="M8 .176c2.146 0 4.077.85 5.5 2.215a.749.749 0 0 1 .25.559v4.3c0 3.32-1.745 6.31-4.606 7.962a.75.75 0 0 1-.744 0C5.545 13.55 3.8 10.56 3.8 7.25v-4.3a.75.75 0 0 1 .25-.56A7.478 7.478 0 0 1 8 .176Zm4.45 3.344A5.986 5.986 0 0 0 8 1.683a5.986 5.986 0 0 0-4.45 1.837v3.73c0 2.655 1.372 5.06 3.669 6.45a7.92 7.92 0 0 0 1.562.776 7.92 7.92 0 0 0 1.563-.776c2.296-1.39 3.668-3.795 3.668-6.45v-3.73Z"></path></svg>
             </div>
-            <div class="space-y-4">
-                <div class="w-12 h-12 rounded-sm bg-neutral-900 border border-neutral-800 flex items-center justify-center text-white font-bold mono text-sm">02</div>
-                <h3 class="text-xl font-bold text-white">Global Broadband Monopolization</h3>
-                <p class="text-sm text-neutral-400 font-light leading-relaxed">
-                    Starlink’s low Earth orbit (LEO) satellite constellation accounts for a massive share of active space payloads. Serving enterprise systems, maritime lanes, defense arrays, and isolated consumers globally, it delivers highly predictable recurring SaaS cash flows.
-                </p>
-            </div>
-            <div class="space-y-4">
-                <div class="w-12 h-12 rounded-sm bg-neutral-900 border border-neutral-800 flex items-center justify-center text-white font-bold mono text-sm">03</div>
-                <h3 class="text-xl font-bold text-white">xAI Infrastructure Symbiosis</h3>
-                <p class="text-sm text-neutral-400 font-light leading-relaxed">
-                    The strategic alignment with advanced machine intelligence architectures optimizes launch telemetry, constellation routing paths, autonomous space industrial systems, and next-generation real-time edge processing nodes.
-                </p>
-            </div>
+            <h3 class="h4 mb-2">Audit-Friendly</h3>
+            <p class="color-text-secondary f5 mb-0">No complex build steps, runtime frameworks, or unpredictable dependencies. Codebase remains secure and crystal clear.</p>
+          </div>
         </div>
-    </section>
 
-    <!-- Brokerage Action & Allocation Form Section -->
-    <section id="brokerage" class="py-24 bg-neutral-900/50 border-t border-neutral-800 px-6 relative">
-        <div class="max-w-4xl mx-auto bg-neutral-950 border border-neutral-800 p-8 md:p-16 rounded-sm shadow-2xl relative z-10">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="mono text-xs text-amber-500 uppercase tracking-widest block mb-3">INSTITUTIONAL PIPELINE</span>
-                <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Secure Your Allocation Pool</h2>
-                <p class="text-sm text-neutral-400 font-light">
-                    Synchronize your active retail brokerage profile to secure real-time trade execution metrics, institutional margin structures, and zero-slippage liquidity fills on NASDAQ: SPCX blocks.
-                </p>
+        <div class="col-sm-12 col-md-4 float-left mb-4">
+          <div class="Box p-4 height-full color-bg-default color-border-muted shadow-sm">
+            <div class="color-fg-attention mb-3">
+              <svg class="octicon octicon-code" viewBox="0 0 16 16" version="1.1" width="24" height="24" fill="currentColor"><path d="m11.28 3.22 4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L13.94 8 10.22 4.28a.75.75 0 0 1 1.06-1.06Zm-6.56 0a.75.75 0 0 1 0 1.06L1.06 8l3.66 3.66a.75.75 0 0 1-1.06 1.06L.22 8.53a.75.75 0 0 1 0-1.06l4.25-4.25a.75.75 0 0 1 1.06 0Z"></path></svg>
             </div>
-
-            <!-- Interface Execution Block -->
-            <form onsubmit="event.preventDefault();" class="space-y-6 max-w-md mx-auto">
-                <div>
-                    <label class="block mono text-[10px] text-neutral-400 uppercase tracking-widest mb-2 font-semibold">Select Target Brokerage Node</label>
-                    <select class="w-full bg-neutral-900 border border-neutral-800 text-sm p-4 rounded-sm focus:outline-none focus:border-neutral-500 text-neutral-300 mono">
-                        <option>Exness Premium Liquidity Node</option>
-                        <option>Fidelity Retail IPO Desk</option>
-                        <option>Standard Secondary Market Routing</option>
-                    </select>
-                </div>
-                <div>
-                    <label class="block mono text-[10px] text-neutral-400 uppercase tracking-widest mb-2 font-semibold">Target Allocation Volume ($ USD)</label>
-                    <input type="number" placeholder="e.g. 5000" class="w-full bg-neutral-900 border border-neutral-800 text-sm p-4 rounded-sm focus:outline-none focus:border-neutral-500 text-neutral-300 mono" />
-                </div>
-                <button type="submit" class="w-full mono bg-white text-black py-4 font-bold uppercase tracking-wider text-xs hover:bg-neutral-200 transition-all rounded-sm">
-                    Initialize Order Request &rarr;
-                </button>
-                <p class="text-[10px] text-center text-neutral-500 tracking-wide leading-relaxed">
-                    * Trading derivative instruments, equity options, and public market stocks involves capital asset risk. Confirm parameter weights carefully.
-                </p>
-            </form>
+            <h3 class="h4 mb-2">Native Dark Mode</h3>
+            <p class="color-text-secondary f5 mb-0">Built directly around modern design specs, delivering premium contrasting UI elements that look exceptionally sharp.</p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Minimalist Footer -->
-    <footer class="border-t border-neutral-900 py-12 px-6 bg-neutral-950 text-neutral-600 text-xs">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
-            <span class="mono tracking-wider">&copy; 2026 SPCX INDEPENDENT ANALYSIS DECK</span>
-            <div class="flex gap-6">
-                <a href="#history" class="hover:text-neutral-400 transition-colors">Back to Top</a>
-                <span class="text-neutral-800">|</span>
-                <span class="text-neutral-500">Document Classification: Public Architecture</span>
-            </div>
-        </div>
-    </footer>
+  <footer class="color-bg-default border-top color-border-muted py-6 px-3">
+    <div class="container-xl d-flex flex-column flex-md-row flex-justify-between flex-items-center mx-auto text-center text-md-left f6 color-text-secondary">
+      <div class="mb-3 mb-md-0">
+        &copy; 2026 demo-repo. Licensed under MIT.
+      </div>
+      <div class="d-flex gap-3">
+        <a href="#" class="Link--secondary">Terms</a>
+        <a href="#" class="Link--secondary">Privacy</a>
+        <a href="#" class="Link--secondary">Security</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
